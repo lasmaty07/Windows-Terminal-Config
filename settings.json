@@ -28,8 +28,7 @@
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
-            "fontSize":9
-            
+            "fontSize":9            
         },
         "list":
         [
@@ -38,6 +37,8 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
+                "colorScheme": "Blue Matrix",
+                "fontFace": "Cascadia Code PL",
                 "hidden": false
             },
             {
@@ -65,9 +66,9 @@
                 "colorScheme": "Raspi",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.9,
-                "icon": "~/raspi.png",
+                "icon": "C:/Users/Matt/Documents/raspi.png",
                 "backgroundImageAlignment": "bottomRight",
-                "backgroundImage": "~/pihole.png",
+                "backgroundImage": "C:/Users/Matt/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/pihole.png",
                 "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none"
             },
@@ -78,9 +79,9 @@
                 "colorScheme": "Raspi",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.9,
-                "icon": "~/raspi.png",
+                "icon": "C:/Users/Matt/Documents/raspi.png",
                 "backgroundImageAlignment": "bottomRight",
-                "backgroundImage": "~/octoprint.png",
+                "backgroundImage": "C:/Users/Matt/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/octoprint.png",
                 "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none"
             },
@@ -91,9 +92,9 @@
                 "colorScheme": "Ubuntu",
                 "useAcrylic": true,
                 "acrylicOpacity": 0.9,
-                "icon": "~/ubuntu-logo.png",
+                "icon": "C:/Users/Matt/Documents/ubuntu-logo.png",
                 "backgroundImageAlignment": "bottomRight",
-                "backgroundImage": "~/ubuntu-logo.png",
+                "backgroundImage": "C:/Users/Matt/Documents/ubuntu-logo.png",
                 "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none"
             }
@@ -144,49 +145,27 @@
             "red": "#BD0940",
             "white": "#FFFFFD",
             "yellow": "#E0DE48"
-        },
-        {
-            "name": "Wez",
-            "black": "#000000",
-            "red": "#cc5555",
-            "green": "#55cc55",
-            "yellow": "#cdcd55",
-            "blue": "#5555cc",
-            "purple": "#cc55cc",
-            "cyan": "#7acaca",
-            "white": "#cccccc",
-            "brightBlack": "#555555",
-            "brightRed": "#ff5555",
-            "brightGreen": "#55ff55",
-            "brightYellow": "#ffff55",
-            "brightBlue": "#5555ff",
-            "brightPurple": "#ff55ff",
-            "brightCyan": "#55ffff",
+        },{
+            "name": "Blue Matrix",
+            "black": "#101116",
+            "red": "#ff5680",
+            "green": "#00ff9c",
+            "yellow": "#fffc58",
+            "blue": "#00b0ff",
+            "purple": "#d57bff",
+            "cyan": "#76c1ff",
+            "white": "#c7c7c7",
+            "brightBlack": "#686868",
+            "brightRed": "#ff6e67",
+            "brightGreen": "#5ffa68",
+            "brightYellow": "#fffc67",
+            "brightBlue": "#6871ff",
+            "brightPurple": "#d682ec",
+            "brightCyan": "#60fdff",
             "brightWhite": "#ffffff",
-            "background": "#000000",
-            "foreground": "#b3b3b3"
-          },
-          {
-            "name": "Atom",
-            "black": "#000000",
-            "red": "#fd5ff1",
-            "green": "#87c38a",
-            "yellow": "#ffd7b1",
-            "blue": "#85befd",
-            "purple": "#b9b6fc",
-            "cyan": "#85befd",
-            "white": "#e0e0e0",
-            "brightBlack": "#000000",
-            "brightRed": "#fd5ff1",
-            "brightGreen": "#94fa36",
-            "brightYellow": "#f5ffa8",
-            "brightBlue": "#96cbfe",
-            "brightPurple": "#b9b6fc",
-            "brightCyan": "#85befd",
-            "brightWhite": "#e0e0e0",
-            "background": "#161719",
-            "foreground": "#c5c8c6"
-          }
+            "background": "#1d2342",
+            "foreground": "#b8ffe1"
+        }
     ],
 
     // Add custom keybindings to this array.
@@ -199,6 +178,8 @@
         // To learn more about selection, visit https://aka.ms/terminal-selection
         { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
         { "command": "paste", "keys": "ctrl+v" },
+        { "command": "newTab", "keys": "ctrl+t" },
+        { "command": "closeTab", "keys": "ctrl+w" },
 
         // Press Ctrl+Shift+F to open the search box
         { "command": "find", "keys": "ctrl+shift+f" },
